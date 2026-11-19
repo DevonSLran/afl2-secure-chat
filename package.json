@@ -1,0 +1,19 @@
+{
+  "name": "afl2-secure-chat",
+  "version": "1.0.0",
+  "description": "ISSG AFL-2 Chat Application Challenge: a Node.js + Socket.IO chat made secure with hash, RSA signatures and RSA encryption",
+  "scripts": {
+    "hash:server": "node 1-hash/server.js",
+    "hash:malicious": "node 1-hash/malicious-server.js",
+    "hash:client": "node 1-hash/client.js",
+    "signature:server": "node 2-signature/server.js",
+    "signature:client": "node 2-signature/client.js",
+    "encryption:server": "node 3-encryption/server.js",
+    "encryption:client": "node 3-encryption/client.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
+  }
+}
